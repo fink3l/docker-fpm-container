@@ -19,7 +19,7 @@ RUN apt-get update && apt-get install -y \
 
 RUN if [ "$phpext" != "" ]; then \
     for item in $phpext; do \
-        ocker-php-ext-install $item; \
+        docker-php-ext-install $item; \
     done;\
     fi;
 
